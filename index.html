@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>QCM</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Questions a choix Multilples</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <div class="container">
 
-	<form>
-		<div><h1> QUESTIONS A CHOIX MULTIPLES </h1></div>
+    <form class="form">
 
-		<div><h3>Que signifie EPT</h3></div><br>
-			<div>Ecole Polytechnique De Thies <input type="radio" name="q1"></div><br>
-			<div>Ecole Polytechnique De Thor <input type="radio" name="q1"></div><br>
-			<div>Ecole Politique De Thies <input type="radio" name="q1"></div><br>
+      <div class="title shadow-sm p-3 mb-5 bg-light rounded">
+        <div ><h1>Questions a Choix Multiples</h1></div>
+      </div>
 
-		<div><h3>Real madrid est une equipe de</h3></div><br>
-			<div>Basket <input type="radio" name="q2"></div><br>
-			<div>Football <input type="radio" name="q2"></div><br>
-			<div>Tennis <input type="radio" name="q2"></div><br>
+      <div class="questions shadow-none p-3 mb-5 bg-light rounded">
 
-		<div><h3>Java est une langage</h3></div><br>
-			<div>Compile <input type="radio" name="q3"></div><br>
-			<div>Interprete <input type="radio" name="q3"> </div><br>
-			<div>Aucune reponse n'est correcte <input type="radio" name="q3"></div><br>
+          <div class="1qcm row">
+            <div class="col-sm-12">
+              <div><h2 class="shadow-sm p-3 mb-5 bg-white rounded">Que signifie EPT</h2></div>
+                  <div>Ecole Polytechnique De Thies <input type="radio" name="q1" class="true"></div><br>
+                  <div>Ecole Polytechnique De Thor <input type="radio" name="q1" class="false"></div><br>
+                  <div>Ecole Politique De Thies <input type="radio" name="q1" class="false"></div><br>
+            </div>
+          </div>
 
-		<div><h3>Veuillez valider vos choix</h3></div>
-			<input type="submit" name="submit" value="Valider">
-			<input type="reset" name="reset" value="Clear">
+          <div class="2qcm row">
+            <div class="col-sm-12">
+              <div><h2 class="shadow-sm p-3 mb-5 bg-white rounded">Real madrid est une equipe de</h2></div>
+                  <div>Basket <input type="radio" name="q2" class="false"></div><br>
+                  <div>Football <input type="radio" name="q2" class="true"></div><br>
+                  <div>Tennis <input type="radio" name="q2" class="false"></div><br>
+            </div>
+          </div>
 
-	</form>
+          <div class="3qcm row">
+            <div class="col-sm-12">
+              <div><h2 class="shadow-sm p-3 mb-5 bg-white rounded">Java est un langage</h2></div>
+                  <div>Compile <input type="radio" name="q3" class="false"></div><br>
+                  <div>Interprete <input type="radio" name="q3"  class="true"> </div><br>
+                  <div>Aucune reponse n'est correcte <input type="radio" name="q3" class="false"></div><br>
+            </div>
+          </div>
 
-	<script type="text/javascript" src="script.js"></script>
+          <div class="vqcm row shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="col-sm-12 validation">
+                <div><h3><em >Veuillez valider vos choix</em></h3></div>
+                    <div class="spinner-border text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                    </div>
+                    <input type="submit" name="submit" value="Valider" class="btn btn-success">
+                    <input type="reset" name="reset" value="Clear" class="btn btn-danger">
+
+            </div>
+          </div>
+
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>
